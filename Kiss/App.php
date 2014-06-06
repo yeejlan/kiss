@@ -15,7 +15,7 @@ class Kiss_App{
     private static $isInit = false;
 
     const PRODUCTION = 10;
-    const STAGING = 20
+    const STAGING = 20;
     const TESTING = 30;
     const DEVELOPMENT = 40;
 
