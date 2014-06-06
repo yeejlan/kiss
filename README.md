@@ -4,7 +4,8 @@ kiss
 A simple and easy to use PHP micro MVC framework.
 
 Please check example folder for basic usage.
-	
+
+```php	
 	<?php
 	define('APP_PATH', realpath(dirname(__FILE__) . '/../'));
 	
@@ -40,3 +41,4 @@ Please check example folder for basic usage.
 	
 	//run
 	$router->dispatch();
+```
