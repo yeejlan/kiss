@@ -6,8 +6,6 @@ class Kiss_Router{
 	private $routers = array();
 	private static $controller = null;
 	private static $action = null;
-	private static $platform = null;
-	private static $revision = null;
 
 	/**
 	* get current controller
