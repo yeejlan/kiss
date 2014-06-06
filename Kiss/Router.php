@@ -24,36 +24,6 @@ class Kiss_Router{
 	}	
 
 	/**
-	* set platform
-	**/
-	public static function setPlatform($platform){
-		self::$platform = $platform;
-	}	
-
-	/**
-	* get platform
-	**/
-	public static function getPlatform(){
-		return self::$platform;
-	}	
-
-	/**
-	* set revision
-	**/
-	public static function setRevision($revision){
-		self::$revision = $revision;
-	}		
-
-	/**
-	* get revision
-	**/
-	public static function getRevision(){
-		return self::$platform;
-	}		
-
-
-
-	/**
 	* add a regex router
 	* @param $urlRewrite string, for example: 'shop/product/(\d+)'
 	* @param $action string, for example: 'shop/showprod'
