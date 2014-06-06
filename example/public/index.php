@@ -25,7 +25,7 @@ Kiss_App::bootstrap();
 $config = Kiss_App::getConfig();
 Kiss_Registry::set('config', $config);
 
-//creater router
+//create router
 $router = new Kiss_Router();
 
 //map "/hello/*" to Controller/Home.php::hiAction()
