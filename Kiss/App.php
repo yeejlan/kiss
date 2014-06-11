@@ -87,6 +87,9 @@ class Kiss_App{
             ini_set('display_errors', 'Off');        
         }
 
+        //set cookie as httponly
+        ini_set("session.cookie_httponly", 1);
+
         //set autoload
         spl_autoload_register(array(__CLASS__, 'loadClass'));
 
