@@ -73,7 +73,7 @@ class Kiss_Router{
 		//no route match here, normal controller/action parse
 		if(!$routeMatched){
 			$uriArr = explode('/', $uri);
-			$uriArr = array_slice($uriArr, 1, 2);
+			$uriArr = array_slice($uriArr, 1);
 			$actionUri = implode('/', $uriArr);  //format: 'controller/action'			
 			list($controller, $action) = array_pad(explode('/', $actionUri), 2, '');
 			

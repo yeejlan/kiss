@@ -111,7 +111,7 @@ class Kiss_App{
         $filename = str_replace('_', '/', $classname).'.php';
         $resolvedName = stream_resolve_include_path($filename);
         if ($resolvedName !== false) {
-            return include $resolvedName;
+            return require $resolvedName;
         }
         return false;       
     }    
