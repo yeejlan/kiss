@@ -24,6 +24,7 @@ Kiss_App::bootstrap();
 //store config to Kiss_Registry
 $config = Kiss_App::getConfig();
 Kiss_Registry::set('config', $config);
+//Resources::setConfig($config);
 
 //create router
 $router = new Kiss_Router();
