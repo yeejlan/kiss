@@ -108,7 +108,7 @@ class Kiss_App{
     * autoload function
     */
     public static function loadClass($classname){
-        $filename = str_replace('_', '/', $classname).'.php';
+        $filename = str_replace(array('_','\\'), '/', $classname).'.php';
         $resolvedName = stream_resolve_include_path($filename);
         if ($resolvedName !== false) {
             return require $resolvedName;
